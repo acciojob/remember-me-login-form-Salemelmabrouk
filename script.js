@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const rememberMe = rememberMeCheckbox.checked;
+		<input type="checkbox" id="checkbox">
+<label for="checkbox">Remember me</label>
 
         if (rememberMe) {
             localStorage.setItem('username', username);
