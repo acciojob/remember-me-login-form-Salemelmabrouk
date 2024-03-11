@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     existingUserButton.id = 'existing';
     existingUserButton.textContent = 'Login as existing user';
     document.body.appendChild(existingUserButton);
-
+     document.getElementById('username').value=savedUsername;
+    document.getElementById('password').value=savedPassword;
     existingUserButton.addEventListener('click', function() {
       alert('Logged in as ' + savedUsername);
     });
